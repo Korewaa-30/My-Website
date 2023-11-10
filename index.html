@@ -10,7 +10,11 @@
 			http-equiv="X-UA-Compatible"
 			content="ie=edge"
 		/>
-		<title>Sarah Duker</title>
+		<meta
+			name="description"
+			content="This is my official website which is still under development"
+		/>
+		<title>Sarah Duker | My Official Website</title>
 		<link
 			rel="icon"
 			type="image/x-icon"
@@ -24,7 +28,7 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="multiple.css"
+			href="/src/multiple.css"
 		/>
 		<script
 			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -41,7 +45,8 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a
 				class="navbar-brand"
-				href="index.html"
+				href="/"
+				title="My official name"
 				>Sarah Duker</a
 			>
 			<button
@@ -62,19 +67,25 @@
 				<div class="navbar-nav">
 					<a
 						class="nav-link active"
-						href="index.html"
-						>Home <span class="sr-only">(current)</span></a
+						href="/"
+						title="Main webpage"
 					>
+						Home <span class="sr-only">(current)</span>
+					</a>
 					<a
 						class="nav-link"
-						href="description.html"
-						>About me</a
+						href="/about.html"
+						title="description about my website"
 					>
+						About me
+					</a>
 					<a
 						class="nav-link"
-						href="description.html#contact-me"
-						>Contact me</a
+						href="/about.html#contact-me"
+						title="How to contact me"
 					>
+						Contact me
+					</a>
 				</div>
 			</div>
 		</nav>
@@ -86,12 +97,12 @@
 			</h3>
 			<div class="link-box">
 				<a
-					href="description.html#contact-me"
+					href="/about.html#contact-me"
 					class="contact"
 					>Contact Me</a
 				>
 				<a
-					href="description.html"
+					href="/about.html"
 					class="about"
 					>About Me</a
 				>
@@ -101,7 +112,7 @@
 				<div class="row">
 					<div class="col-md-6 p-3 mb-3">
 						<img
-							src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/428/original/music.png?1699546416"
+							src="/images/music.png"
 							alt="music"
 							class="img-fluid rounded shadow h-100 w-100"
 						/>
@@ -117,47 +128,52 @@
 						</div>
 						<br />
 						<a
-							href="music.html"
+							href="/music.html"
 							target="_blank"
 							class="rounded p-4 m-3 bg-primary text-white"
+							title="link to view my music project"
 						>
 							Launch Music Project
 						</a>
 					</div>
 					<br />
-					<div class="col-md-6 mb-4">
-						<h2 class="text-dark">Weather project</h2>
-						<div class="project text-dark">
-							I built a "Weather App" webpage using HTML, CSS, and JavaScript.
-							It's a user-friendly app with a responsive design, allowing users
-							to check weather information for any city or their current
-							location. The app also provides unit conversion and changes the
-							background based on the time of day.
+					<div class="row">
+						<div class="col-md-6 mb-4 order-md-1 order-2">
+							<h2 class="text-dark">Weather project</h2>
+							<div class="project text-dark">
+								I built a "Weather App" webpage using HTML, CSS, and JavaScript.
+								It's a user-friendly app with a responsive design, allowing
+								users to check weather information for any city or their current
+								location. The app also provides unit conversion and changes the
+								background based on the time of day.
+							</div>
+							<br />
+							<a
+								href="https://vanilla-weather-project-theta.vercel.app/"
+								target="_blank"
+								class="rounded p-4 m-3 bg-primary text-white"
+								title="link to view my weather project"
+							>
+								Launch Weather App
+							</a>
 						</div>
-						<br />
-						<a
-							href="https://vanilla-weather-project-theta.vercel.app/"
-							target="_blank"
-							class="rounded p-4 m-3 bg-primary text-white"
-						>
-							Launch Weather App
-						</a>
-					</div>
-					<div class="col-md-6 p-3 mb-4">
-						<img
-							src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/415/original/weather.png?1699531166"
-							alt="weather"
-							width="500"
-							class="img-fluid rounded shadow h-100 w-100"
-						/>
+						<div class="col-md-6 p-3 mb-4 order-md-2 order-1">
+							<img
+								src="/images/weather.png"
+								alt="weather"
+								width="500"
+								class="img-fluid rounded shadow h-100 w-100"
+							/>
+						</div>
 					</div>
 					<br />
 					<div class="col-md-6 p-3 mb-4">
 						<img
-							src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/103/427/original/speech.png?1699546372"
+							src="/images/speech.png"
 							alt="text-to-speech"
 							width="500"
 							class="img-fluid rounded shadow h-100 w-100"
+							title="link to view my music project"
 						/>
 					</div>
 					<div class="col-md-6">

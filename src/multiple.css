@@ -236,22 +236,16 @@ a .open {
 }
 
 footer {
-	background: linear-gradient(to top, #f9f7fe, #018ccd, #5252f8);
-	padding: 10px;
+	background: linear-gradient(to bottom, #4d4de7, var(--hero));
+	border-radius: 5px;
 }
 
-@keyframes gradientAnimation {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.git {
+	font-size: 18px;
+	font-family: var(--font-1);
+	font-weight: bold;
 }
 
-footer {
-	animation: gradientAnimation 5s infinite;
+.git em {
+	font-weight: normal;
 }

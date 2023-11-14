@@ -2,14 +2,15 @@
 	--primary-color: #5252f8;
 	--secondary-color: #f0f0f0;
 	--hero: #f9f7fe;
+	--font-1: "Playfair Display", serif;
+	--font-2: "Poppins", sans-serif;
 }
 
 .container-flex {
-	background: linear-gradient(to bottom, #f9f7fe, #018ccd, #4d4d9b);
+	background: linear-gradient(to bottom, #f9f7fe, #018ccd, #5252f8);
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	display: block;
-	font-family: "Times New Roman", Times, serif;
 	justify-content: center;
 	padding: 20px;
 	text-align: center;
@@ -17,20 +18,28 @@
 
 h1 {
 	font-size: 80px;
+	font-family: var(--font-1);
+	font-weight: bold;
 	margin: 0 auto;
 }
 
 h2 {
 	font-size: 50px;
+	font-family: var(--font-1);
+	font-weight: bold;
 	margin: 0 auto;
 }
 
 h3 {
 	font-size: 24px;
+	font-family: var(--font-1);
+	font-weight: bold;
 	opacity: 0.7;
 }
 
 h3 .prefix {
+	font-family: var(--font-1);
+	font-weight: bold;
 	font-size: 19px;
 }
 
@@ -112,33 +121,63 @@ p {
 .hero {
 	background: var(--hero);
 	display: block;
-	padding: 20px;
+	padding: 100px 20px;
 	text-align: center;
 }
 
 .hero p {
 	font-size: 36px;
-	font-family: "Poppins", sans-serif;
+	font-family: var(--font-2);
 	font-weight: bold;
 	margin-bottom: 0;
 }
 
 .hero h1 {
 	font-size: 96px;
-	font-family: "Playfair Display", serif;
+	font-family: var(--font-1);
 	font-weight: bold;
 	margin-top: 0;
 }
 
 .hero h2 {
-	font-family: "Playfair Display", serif;
+	font-family: var(--font-1);
 	font-weight: bold;
 }
 
 .hero h3 {
 	color: #272142;
 	font-size: 24px;
-	font-family: "Playfair Display", serif;
+	font-family: var(--font-1);
 	font-weight: normal;
 	line-height: 2;
+}
+
+.my-picture {
+	border-radius: 10px;
+	max-width: 100%;
+	max-height: 70%;
+}
+
+.describe {
+	font-size: 16px;
+	font-family: var(--font-2);
+}
+
+.work {
+	border-radius: 5px;
+	background: var(--secondary-color);
+	font-size: 18px;
+	font-family: var(--font-2);
+	padding: 15px 30px;
+	text-decoration: none;
+}
+
+.work:hover {
+	color: #272142;
+	text-decoration: none;
+}
+
+.name {
+	font-size: 64px;
+	margin-bottom: 10px;
 }

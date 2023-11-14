@@ -130,7 +130,7 @@ a .open {
 .hero {
 	background: var(--hero);
 	display: block;
-	padding: 10px 100px;
+	padding: 10px 70px;
 	text-align: center;
 }
 

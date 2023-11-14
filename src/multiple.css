@@ -206,6 +206,52 @@ a .open {
 }
 
 .btn.btn-danger {
+	font-family: var(--font-2);
 	font-size: 16px;
 	padding: 15px 30px;
+}
+
+.inquiry {
+	font-family: var(--font-1);
+	font-size: 35px;
+	opacity: 1;
+}
+
+.together {
+	font-family: var(--font-2);
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.imail {
+	font-family: var(--font-2);
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.imail:hover a {
+	text-decoration: none;
+}
+
+footer {
+	background: linear-gradient(to top, #f9f7fe, #018ccd, #5252f8);
+	padding: 10px;
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+footer {
+	animation: gradientAnimation 5s infinite;
 }

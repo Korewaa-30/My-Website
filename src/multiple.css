@@ -11,6 +11,7 @@
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	display: block;
+	font-family: var(--font-2);
 	justify-content: center;
 	padding: 20px;
 	text-align: center;
@@ -46,6 +47,15 @@ p {
 	align-items: center;
 	font-size: 18px;
 	padding: 20px;
+}
+
+a .open {
+	text-align: center;
+}
+
+.change {
+	display: block;
+	text-align: left;
 }
 
 .col-md-6 a {
@@ -193,4 +203,9 @@ p {
 .tools {
 	color: rgb(239, 56, 56);
 	opacity: 1;
+}
+
+.btn.btn-danger {
+	font-size: 16px;
+	padding: 15px 30px;
 }

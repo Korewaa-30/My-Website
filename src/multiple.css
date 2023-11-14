@@ -1,10 +1,11 @@
 :root {
 	--primary-color: #5252f8;
 	--secondary-color: #f0f0f0;
+	--hero: #f9f7fe;
 }
 
 .container-flex {
-	background: linear-gradient(to bottom, #f8f9fa, #018ccd, #4d4d9b);
+	background: linear-gradient(to bottom, #f9f7fe, #018ccd, #4d4d9b);
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	display: block;
@@ -109,8 +110,9 @@ p {
 }
 
 .hero {
-	background: #f9f7fe;
-	padding: 160px 20px;
+	background: var(--hero);
+	display: block;
+	padding: 20px;
 	text-align: center;
 }
 
@@ -129,19 +131,14 @@ p {
 }
 
 .hero h2 {
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
+}
+
+.hero h3 {
 	color: #272142;
 	font-size: 24px;
 	font-family: "Playfair Display", serif;
 	font-weight: normal;
 	line-height: 2;
-}
-
-.hero a {
-	border-radius: 4px;
-	background: #5252f8;
-	color: white;
-	font-family: "Poppins", sans-serif;
-	font-size: 18px;
-	padding: 15px 30px;
-	text-decoration: none;
 }

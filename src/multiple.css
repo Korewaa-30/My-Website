@@ -27,7 +27,6 @@ h2 {
 	font-size: 50px;
 	font-family: var(--font-1);
 	font-weight: bold;
-	margin: 0 auto;
 }
 
 h3 {
@@ -180,4 +179,18 @@ p {
 .name {
 	font-size: 64px;
 	margin-bottom: 10px;
+}
+
+.calendar {
+	border: 8px;
+	max-height: 90%;
+}
+
+.button {
+	background: #f1c8cf;
+}
+
+.tools {
+	color: rgb(239, 56, 56);
+	opacity: 1;
 }

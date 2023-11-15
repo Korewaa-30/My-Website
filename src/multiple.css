@@ -7,7 +7,7 @@
 }
 
 .container-flex {
-	background: linear-gradient(to bottom, #f9f7fe, #018ccd, #5252f8);
+	background: linear-gradient(to bottom, #f9f7fe, #b0d8f0);
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	display: block;
@@ -66,6 +66,11 @@ a .open {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	font-size: 18px;
 	margin-bottom: 5px;
+}
+
+.nav-link {
+	font-family: var(--font-1);
+	font-weight: 600;
 }
 
 .link-box {
@@ -130,7 +135,7 @@ a .open {
 .hero {
 	background: var(--hero);
 	display: block;
-	padding: 10px 70px;
+	padding: 10px 60px;
 	text-align: center;
 }
 
@@ -172,11 +177,19 @@ a .open {
 	font-family: var(--font-2);
 }
 
+.check-out {
+	font-family: var(--font-1);
+	font-size: 25px;
+	font-weight: 700;
+}
+
 .work {
 	border-radius: 5px;
-	background: var(--secondary-color);
+	background: var(--primary-color);
+	color: var(--hero);
 	font-size: 18px;
 	font-family: var(--font-2);
+	margin-bottom: 10px;
 	padding: 15px 30px;
 	text-decoration: none;
 }
@@ -197,15 +210,27 @@ a .open {
 }
 
 .button {
-	background: #f1c8cf;
+	background: #0062cc;
+	color: var(--hero);
 }
 
 .tools {
 	color: rgb(239, 56, 56);
-	opacity: 1;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.tool {
+	max-width: 10%;
 }
 
 .btn.btn-danger {
+	font-family: var(--font-2);
+	font-size: 16px;
+	padding: 15px 30px;
+}
+
+.btn.btn-primary {
 	font-family: var(--font-2);
 	font-size: 16px;
 	padding: 15px 30px;
@@ -236,7 +261,7 @@ a .open {
 }
 
 footer {
-	background: linear-gradient(to bottom, #4d4de7, var(--hero));
+	background: linear-gradient(to top, #f9f7fe, #b0d8f0);
 	border-radius: 5px;
 }
 

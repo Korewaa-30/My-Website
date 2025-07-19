@@ -116,35 +116,92 @@
 				</p>
 				<div class="row">
 					<div class="col-md-8">
-						<form class="m-3 p-3 border rounded">
+						<form
+							class="m-3 p-3 border rounded"
+							action="https://formspree.io/f/mzzvdzen"
+							method="POST"
+						>
+							<input
+								type="hidden"
+								name="_redirect"
+								value="https://yourdomain.com/thank-you.html"
+							/>
 							<div class="form-group">
-								<label for="exampleInputEmail">Your email:</label>
+								<label>Your name:</label>
+								<div class="form-row">
+									<div class="col-md-3 mb-2">
+										<select
+											name="title"
+											class="form-control"
+										>
+											<option
+												value=""
+												disabled
+												selected
+												hidden
+											>
+												Title (optional)
+											</option>
+											<option>Miss</option>
+											<option>Ms</option>
+											<option>Mr</option>
+											<option>Dr</option>
+											<option>Prof</option>
+										</select>
+									</div>
+									<div class="col-md-4 mb-2">
+										<input
+											type="text"
+											name="first_name"
+											class="form-control p-3"
+											placeholder="First name"
+											required
+										/>
+									</div>
+									<div class="col-md-5 mb-2">
+										<input
+											type="text"
+											name="last_name"
+											class="form-control p-3"
+											placeholder="Last name"
+											required
+										/>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="InputEmail">Your email:</label>
 								<input
 									type="email"
+									name="email"
 									class="form-control p-4"
 									id="InputEmail"
-									autocomplete="off"
+									required
 								/>
 							</div>
 							<div class="form-group">
-								<label for="ExampleMessage">Your message:</label>
-								<input
-									type="text"
+								<label for="message">Your message:</label>
+								<textarea
+									name="message"
 									class="form-control p-4"
 									id="message"
-									autocomplete="off"
-								/>
+									rows="4"
+									required
+								></textarea>
 							</div>
 							<button
 								type="submit"
 								class="btn btn-danger"
 							>
-								<a href="mailto:dukersarah30@gmail.com"></a>
 								Send
 							</button>
 						</form>
 					</div>
 					<div class="col-md-4">
+						<br />
+						<br />
+						<br />
 						<div>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -164,8 +221,9 @@
 							<br />
 							<a
 								href="mailto:dukersarah30@gmail.com"
+								target="_blank"
 								class="open text-white"
-								>sduker@shecodes.io
+								>dukersarah30@gmail.com
 							</a>
 						</div>
 						<br />
@@ -185,6 +243,7 @@
 							<br />
 							<a
 								href="https://www.linkedin.com/in/sarah-duker"
+								target="_blank"
 								class="open text-white"
 								>@sarah-duker
 							</a>
@@ -206,6 +265,7 @@
 							<br />
 							<a
 								href="https://twitter.com/sarah_duker?s=09"
+								target="_blank"
 								class="open text-white"
 								>@sarah_duker
 							</a>
@@ -234,13 +294,17 @@
 				<div class="imail text-center mb-5">
 					<a
 						href="mailto:dukersarah30@gmail.com"
+						target="_blank"
 						class="email-link text-danger"
-						title="Email Vinnie"
+						title="Email Sarah"
 					>
-						sduker@shecodes.io
+						dukersarah30@gmail.com
 					</a>
 				</div>
-				<div class="social-links d-flex justify-content-center">
+				<div
+					class="social-links d-flex justify-content-center"
+					target="_blank"
+				>
 					<a href="https://twitter.com/sarah_duker?s=09">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -254,7 +318,10 @@
 							/>
 						</svg>
 					</a>
-					<a href="https://instagram.com/sarahduker?igshid=MzNlNGNkZWQ4Mg==">
+					<a
+						href="https://instagram.com/sarahduker?igshid=MzNlNGNkZWQ4Mg=="
+						target="_blank"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="60"
@@ -267,7 +334,10 @@
 							/>
 						</svg>
 					</a>
-					<a href="https://www.linkedin.com/in/sarah-duker">
+					<a
+						href="https://www.linkedin.com/in/sarah-duker"
+						target="_blank"
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="60"
@@ -293,3 +363,11 @@
 		</div>
 	</body>
 </html>
+<script>
+	window.onload = function () {
+		const form = document.querySelector("form");
+		if (form) {
+			form.reset();
+		}
+	};
+</script>

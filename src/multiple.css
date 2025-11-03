@@ -261,7 +261,7 @@ a .open {
 }
 
 footer {
-	background: linear-gradient(to top, #f9f7fe, #b0d8f0);
+	background-color: #b0d8f0;
 	border-radius: 5px;
 }
 

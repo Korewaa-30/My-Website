@@ -56,20 +56,20 @@ h3 .prefix {
   align-items: center;
   font-size: 18px;
   padding: 20px;
-}*/
+}
 
 a .open {
   text-align: center;
-}
+}*/
 
 .change {
   display: block;
   text-align: left;
 }
 
-.col-md-6 a {
+/*.col-md-6 a {
   font-size: 18px;
-}
+}*/
 
 .project {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -82,13 +82,19 @@ a .open {
   font-weight: 600;
 }
 
+.nav-link:hover {
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
 .link-box {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
 
-.link-box a {
+/*.link-box a {
   font-size: 15px;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
@@ -96,27 +102,70 @@ a .open {
   margin: 10px 15px 10px 15px;
   padding: 20px 15px;
   text-decoration: none;
+}*/
+
+h4 {
+  font-family: var(--font-1);
+  font-weight: bold;
 }
 
-.contact {
-  background: var(--primary-color);
-  color: white;
+#about {
+  padding-top: 85px;
 }
 
-.contact:hover {
-  background: var(--secondary-color);
-  color: #5d2590;
-  cursor: pointer;
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.about {
-  background: var(--secondary-color);
+.project-card:nth-child(1) {
+  grid-row: 1 / span 2;
+}
+.project-card:nth-child(2) {
+  grid-row: 2 / span 2;
+}
+.project-card:nth-child(3) {
+  grid-row: 3 / span 2;
+}
+.project-card:nth-child(4) {
+  grid-row: 4 / span 2;
+}
+.project-card:nth-child(5) {
+  grid-row: 5 / span 2;
+}
+.project-card:nth-child(6) {
+  grid-row: 6 / span 2;
 }
 
-.about:hover {
-  background: var(--primary-color);
-  cursor: pointer;
-  color: white;
+.project-card {
+  background: #0f0f0f;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+#projects {
+  padding-top: 110px;
+}
+
+#contacts {
+  padding-top: 90px;
+}
+
+.email {
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 400;
+  font-size: 55px;
+  opacity: 0.7;
+}
+
+.bi {
+  opacity: 0.7;
+}
+
+.arrow {
+  color: #ffff;
 }
 
 #about-me {
@@ -180,8 +229,9 @@ a .open {
 }
 
 .describe p {
+  font-family: var(--font-2);
   font-size: 16px;
-  font-weight: 400 !important;
+  font-weight: 400;
 }
 
 .check-out {
@@ -191,14 +241,8 @@ a .open {
 }
 
 .work {
-  border-radius: 5px;
-  background: var(--primary-color);
-  color: var(--hero);
-  font-size: 18px;
-  font-family: var(--font-2);
-  margin-bottom: 10px;
-  padding: 15px 30px;
-  text-decoration: none;
+  font-family: var(--font-1);
+  font-size: 28px;
 }
 
 .work:hover {
@@ -217,8 +261,10 @@ a .open {
 }
 
 .button {
-  background: #0062cc;
-  color: var(--hero);
+  background: #ffff;
+  border-radius: 15px;
+  color: #0f0f0f;
+  font-weight: 700;
 }
 
 .tools {
@@ -249,13 +295,13 @@ a .open {
   opacity: 1;
 }
 
-.together {
+/*.together {
   font-family: var(--font-2);
   font-size: 16px;
   font-weight: normal;
   margin: 0 auto;
   padding: 0;
-}
+}*/
 
 .imail {
   font-family: var(--font-2);
@@ -268,7 +314,7 @@ a .open {
 }
 
 footer {
-  background-color: #b0d8f0;
+  background: black;
   border-radius: 5px;
 }
 

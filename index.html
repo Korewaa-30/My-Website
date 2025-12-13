@@ -28,7 +28,7 @@
       integrity="sha384-lMz22bIBxH5s/Z1kiMIIpLW7AnJS50pWdFt4zZtIe1Pi33v4uG6fa5PiBBEqFcD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/src/multiple.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
     <script
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
@@ -45,7 +45,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top p-3">
+    <nav class="navbar navbar-expand-md sticky-top p-3">
       <div class="container">
         <a class="navbar-brand" href="/" title="My official name">
           <img src="images/My-logo.png" width="60" class="bg-dark rounded" />
@@ -54,15 +54,15 @@
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarScroll"
-          aria-controls="navbarScroll"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto p-3">
+          <div class="navbar-nav mx-auto p-2">
             <a
               class="nav-link text-white p-3"
               href="#about"
@@ -105,11 +105,12 @@
       </div>
     </nav>
     <div class="container-flex">
+      <div class="dots-bg" id="dots-bg"></div>
       <div class="hero mt-2">
         <img
           src="/images/home-pic.png"
           alt="homes"
-          class="my-picture img-fluid shadow-lg mx-auto d-block"
+          class="my-picture img-fluid mx-auto d-block rounded-circle"
           width="50"
         /><br />
         <h2 class="text-muted">👋Hi, I'm</h2>
@@ -139,15 +140,18 @@
                   has strengthened my focus, discipline, and adaptability.
                 </p>
                 <p class="text-left">
-                  My projects focus on simplicity, accessibility, and thoughtful
-                  design. Outside of tech, I enjoy organizing community programs
-                  for young women in my church, blending faith, creativity, and
-                  service to make a meaningful impact.
+                  I love creating functional and visually appealing projects,
+                  from mini-apps to fun challenges, and I’m passionate about
+                  making tech simple, accessible, and enjoyable.
                 </p>
                 <p class="text-left">
-                  I’m currently open to remote front-end or customer support
-                  opportunities. If you’d like to collaborate or learn more,
-                  feel free to reach out.
+                  When I’m not coding, I help organize programs for young women
+                  in my church, combining creativity, faith, and community
+                  impact.
+                </p>
+                <p class="text-left">
+                  If you’d like to collaborate or learn more, feel free to reach
+                  out.
                 </p>
               </div>
             </div>
@@ -184,6 +188,7 @@
                   >
                 </div>
                 <div class="tools-row mt-3">
+                  <small class="tools">Tools used:</small>
                   <img src="/images/html.png" width="30" />
                   <img src="/images/css.png" width="30" />
                   <img src="/images/editor.png" width="30" />
@@ -209,6 +214,7 @@
                   >
                 </div>
                 <div class="tools-row mt-3">
+                  <small class="tools">Tools used:</small>
                   <img src="/images/html.png" width="30" />
                   <img src="/images/css.png" width="30" />
                   <img src="/images/JavaScript.png" width="30" />
@@ -235,6 +241,7 @@
                   >
                 </div>
                 <div class="tools-row mt-3">
+                  <small class="tools">Tools used:</small>
                   <img src="/images/html.png" width="30" />
                   <img src="/images/css.png" width="30" />
                   <img src="/images/JavaScript.png" width="30" />
@@ -262,6 +269,7 @@
                   </a>
                 </div>
                 <div class="tools-row mt-3">
+                  <small class="tools">Tools used:</small>
                   <img src="/images/html.png" width="30" />
                   <img src="/images/css.png" width="30" />
                   <img src="/images/JavaScript.png" width="30" />
@@ -287,6 +295,7 @@
                   >
                 </div>
                 <div class="tools-row mt-3">
+                  <small class="tools">Tools used:</small>
                   <img src="/images/html.png" width="30" />
                   <img src="/images/css.png" width="30" />
                   <img src="/images/JavaScript.png" width="30" />
@@ -312,6 +321,7 @@
                   >
                 </div>
                 <div class="tools-row mt-3">
+                  <small class="tools">Tools used:</small>
                   <img src="/images/html.png" width="30" />
                   <img src="/images/css.png" width="30" />
                   <img src="/images/JavaScript.png" width="30" />
@@ -466,7 +476,12 @@
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-5 bg-dark rounded">
-              <img src="/images/vs-code.png" alt="code snippet" width="400" />
+              <img
+                src="/images/vs-code.png"
+                alt="code-snippet"
+                width="400"
+                class="snippet rounded"
+              />
             </div>
           </div>
         </div>
@@ -584,4 +599,5 @@
       </div>
     </footer>
   </body>
+  <script src="/src/main.js"></script>
 </html>

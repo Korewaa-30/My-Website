@@ -55,6 +55,15 @@ h3 .prefix {
   text-decoration: underline;
 }
 
+.hero-title {
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
 h4 {
   font-family: var(--font-1);
   font-weight: bold;
@@ -367,29 +376,46 @@ footer {
   }
 }
 
-.dots-bg {
+.cubes-bg {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
   overflow: hidden;
 }
 
-.dot {
+.stair {
   position: absolute;
-  top: -10px;
-  width: 4px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   animation: fall linear infinite;
+}
+
+.step {
+  display: flex;
+  gap: 6px;
+}
+
+.cube {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.step:nth-child(1) .cube {
+  opacity: 0.4;
+}
+.step:nth-child(2) .cube {
+  opacity: 0.5;
+}
+.step:nth-child(3) .cube {
+  opacity: 0.6;
 }
 
 @keyframes fall {
   from {
-    transform: translateY(-10px);
+    transform: translateY(-120px);
   }
   to {
     transform: translateY(110vh);
